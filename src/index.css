@@ -1,0 +1,43 @@
+/* Make the whole page a centered flex container */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 100vh;
+}
+
+/* Root app container */
+#root {
+  width: 100%;
+}
+
+/* Page container inside the app */
+.location-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center heading and row */
+  justify-content: center;
+  gap: 16px;
+  font-size: 2rem;
+}
+.location-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   /* center the row itself */
+  align-items: center;
+  gap: 12px;
+}
+
+.location-select {
+  min-width: 180px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.location-heading {
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+}
